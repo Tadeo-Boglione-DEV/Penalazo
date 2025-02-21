@@ -1,6 +1,9 @@
+/* Establece el fondo global */
 body {
     font-family: Arial, sans-serif;
-    background-color: #121212;
+    background-image: url('/img/460493284.jpg');
+    background-size: cover;
+    background-position: center;
     color: #fff;
     margin: 0;
     padding: 0;
@@ -12,9 +15,10 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #1e1e1e;
+    background: rgba(20, 20, 20, 0.8); /* Opacidad del 80% */
     padding: 10px 40px;
 }
+
 
 .logo img {
     width: 80px; /* Logo más grande */
@@ -45,7 +49,7 @@ h1 {
 
 /* MAIN */
 .main-container {
-    background-image: url('/img/GgRU0U0XUAAsyWo.jpg');
+    background-image: url('/img/460493284.jpg');
     background-size: cover;
     background-position: center;
     padding: 50px 0;
@@ -97,19 +101,19 @@ h1 {
 
 /* FOOTER */
 .footer {
-    background: black;
-    padding: 20px;
+    background: rgba(0, 0, 0, 0.8); /* Opacidad del 80% */
+    padding: 10px; /* Reduce el padding para hacerlo más bajo */
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-/* Redes sociales alineadas correctamente */
+/* Redes sociales más compactas */
 .footer .socials {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    gap: 8px;
+    gap: 4px; /* Reduce el espacio vertical */
 }
 
 .footer .socials div {
@@ -118,33 +122,36 @@ h1 {
 }
 
 .footer .socials img {
-    width: 25px; /* Tamaño corregido */
-    height: 25px;
-    margin-right: 10px;
+    width: 20px; /* Ajuste del tamaño */
+    height: 20px;
+    margin-right: 8px;
 }
 
-/* Nombre del sitio en el centro */
+/* Nombre del sitio en el centro con colores correctos */
 .footer .brand {
-    font-size: 36px; /* Penalazo más grande */
+    font-size: 60px; /* Tamaño grande */
     font-weight: bold;
     text-align: center;
+    display: flex;
+    align-items: center;
+    height: 80px; /* Reduce la altura */
 }
 
-.footer .brand .pena {
-    color: white;
-}
-
-.footer .brand .lazo {
-    color: #60c0f9;
-}
-
+.footer .brand span:nth-child(1) { color: #60c0f9; } /* PE en celeste */
+.footer .brand span:nth-child(2) { color: white; } /* N en blanco */
+.footer .brand span:nth-child(3) { color: yellow; } /* AL en amarillo */
+.footer .brand span:nth-child(4) { color: white; } /* A en blanco */
+.footer .brand span:nth-child(5) { color: #60c0f9; } /* ZO en celeste */
 .footer .brand .com {
-    font-size: 18px;
+    font-size: 25px;
     color: white;
+    align-self: flex-end; /* Alineado al raz del ZO */
+    margin-left: 0px; /* Ajusta la posición */
 }
 
 /* Logo en la derecha */
 .footer .logo {
-    width: 50px; /* Más grande */
+    width: 50px; /* Un poco más pequeño */
     height: 50px;
 }
+

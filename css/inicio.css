@@ -1,22 +1,38 @@
-/* Establece el fondo global */
 body {
     font-family: Arial, sans-serif;
+    background-color: #000; /* Alternativa si la imagen no carga */
     background-image: url('/img/460493284.jpg');
     background-size: cover;
     background-position: center;
+    background-attachment: fixed; /* Mantiene el fondo fijo */
     color: #fff;
     margin: 0;
     padding: 0;
     text-align: center;
 }
 
-/* HEADER */
 header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: rgba(20, 20, 20, 0.8); /* Opacidad del 80% */
+    background: rgba(30, 30, 30, 0.8); /* Color con opacidad */
     padding: 10px 40px;
+    width: 90%; /* Para que no toque los bordes */
+    margin: 20px auto; /* Margen superior e inferior para flotar */
+    border-radius: 20px; /* Bordes redondeados */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5); /* Sombra para efecto flotante */
+}
+
+/* BARRA CELESTE CENTRADA */
+.header-bar {
+    width: 45%; /* Ajusta el tamaño */
+    height: 15px;
+    background-color: #60c0f9;
+    border-radius: 10px;
+    position: absolute;
+    bottom: 585px; /* Para que quede justo debajo */
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 
@@ -47,21 +63,22 @@ h1 {
     margin-right: 20px;
 }
 
-/* MAIN */
 .main-container {
-    background-image: url('/img/460493284.jpg');
-    background-size: cover;
-    background-position: center;
+    background: none; /* Quita la imagen de fondo extra */
     padding: 50px 0;
 }
 
 .banner {
-    background: rgba(255, 255, 255, 0.2);
+    background: #23357e; /* Azul marino más minimalista */
     padding: 15px;
     display: inline-block;
     border-radius: 10px;
-    font-size: 18px;
+    font-size: 20px;
+    font-family: 'Apple Chancery, cursive', serif; /* Nueva tipografía */
+    font-weight: 700;
+    border: 3px solid #ffd900; /* Borde dorado */
 }
+
 
 /* Aumenta la separación entre las tarjetas */
 .games-container {
@@ -106,6 +123,11 @@ h1 {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    width: 90%;
+    margin: 20px auto;
+    border-radius: 20px;
+    box-shadow: 0px -4px 10px rgba(0, 0, 0, 0.5); /* Sombra para efecto flotante */
+    position: relative;
 }
 
 /* Redes sociales más compactas */
